@@ -1,0 +1,8 @@
+*.aux
+*.log
+*.gz
+*.pdf
+anteckningar.txt
+*.bbl
+*.blg
+*.toc
