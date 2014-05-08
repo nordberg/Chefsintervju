@@ -31,6 +31,7 @@
 \usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
 \usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
 % These packages are all incorporated in the memoir class to one degree or another...
+\usepackage[numbers]{natbib}
 
 %%% HEADERS & FOOTERS
 \usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
@@ -63,11 +64,22 @@
 
 \begin{document}
 \maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\begin{abstract}
+\input{abstract.tex}
+\end{abstract}
 
 \input{intro.tex}
 
 \input{intervju.tex}
 
-\input{reflektion.tex}
+\input{diskussion.tex}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
 
 \end{document}
