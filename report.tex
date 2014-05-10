@@ -33,6 +33,8 @@
 % These packages are all incorporated in the memoir class to one degree or another...
 \usepackage[numbers]{natbib}
 
+\usepackage{url} % long url split over lines
+
 %%% HEADERS & FOOTERS
 \usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
 \pagestyle{fancy} % options: empty , plain , fancy
@@ -73,14 +75,15 @@ William Perkola&\texttt{perkola@kth.se}
 
 \begin{titlepage}
 \maketitle
-\end{titlepage}
-
-\tableofcontents
-\newpage
 
 \begin{abstract}
 \input{abstract.tex}
 \end{abstract}
+
+\end{titlepage}
+
+\tableofcontents
+\newpage
 
 \input{intro.tex}
 
